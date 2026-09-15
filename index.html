@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Head Count Diario — Personal</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: #F4F4F2;
+    color: #1C1C1A;
+  }
+  header {
+    background: #1C2B22;
+    color: #F4F4F2;
+    padding: 20px 32px;
+  }
+  header h1 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  header p {
+    font-size: 13px;
+    color: #B7C2BB;
+    margin-top: 4px;
+  }
+  .report-wrap {
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .report-frame-container {
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.08);
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    display: flex;
+    justify-content: center;
+  }
+  iframe {
+    width: 100%;
+    max-width: 1140px;
+    aspect-ratio: 1140 / 541.25;
+    border: none;
+    display: block;
+  }
+  .login-note {
+    font-size: 13px;
+    color: #6E6A5C;
+    margin-top: 14px;
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+    font-size: 12px;
+    color: #8A8A85;
+    padding: 16px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Head Count Diario</h1>
+  <p>Personal en obra — actualizado automáticamente</p>
+</header>
+
+<div class="report-wrap">
+  <div class="report-frame-container">
+    <iframe
+      title="05 HC"
+      src="https://app.powerbi.com/reportEmbed?reportId=123a223e-e9c9-4a55-a761-fce34f501003&autoAuth=true&ctid=02e12059-510e-4204-92ff-810c2ee6237f"
+      frameborder="0"
+      allowfullscreen="true">
+    </iframe>
+  </div>
+  <p class="login-note">Este reporte requiere iniciar sesión con tu cuenta corporativa de San Martín para visualizarse.</p>
+</div>
+
+<footer>Última actualización según la programación de tu dataset en Power BI</footer>
+
+</body>
+</html>
